@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style/style.css">
+
+ 
+<!--Responsividade-->
+<link rel="stylesheet" href="Style/responsive.css">
+
+<!--owl css-->
+
+<link rel="stylesheet" href="Style/Owl/owl.carousel.min.css">
+<link rel="stylesheet" href="Style/Owl/owl.theme.default.min.css">
+
     <title>Netflix Clone</title>
 </head>
+
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">NETFLIX</h2>
+            <h2 class="logo">CARTOONFLIX</h2>
             <nav>
-                <a href="#">Início</a>
-                <a href="#">Filmes</a>
-                <a href="#">Séries</a>
-                <a href="#">Documentários</a>
+                <a class="menu-top" href="#">Início</a>
+                <a class="menu-top" href="#">Filmes</a>
+                <a class="menu-top" href="#">Cartoons</a>
+                <a class="menu-top" href="#">Clássicos</a>
             </nav>
         </div>
     </header>
@@ -23,8 +35,8 @@
     <main>
         <div class="filme-principal">
             <div class="container">
-                <h3 class="titulo">OLHOS FAMINTOS</h3>
-                <p class="descricao">Ao voltarem para casa por uma estrada sem movimento, os irmãos Trish e Darry veem um vulto atirando o que parece ser um corpo embrulhado. Parando para investigar, eles descobrem centenas de corpos mutilados, pendurados embaixo de uma antiga igreja.</p>
+                <img src="img/logo.png" height="100" width="400">
+                <p class="descricao">Acredite em Steven! Steven Universo é um herói metade humano metade Gem que está aprendendo a salvar o mundo com os poderes mágicos que vêm do seu umbigo. Steven pode até não ser tão poderoso quanto as Crystal Gems. Ou tão esperto. Mas isso não o impede de se unir a Garnet, Ametista e Pérola em suas aventuras mágicas – nas quais Steven sempre encontra uma forma surpreendente de salvar o dia.</p>
                 <div class="botoes">
                     <button role="button" class="botao">
                         <i class="fa-solid fa-play"></i>
@@ -33,16 +45,53 @@
                     <button role="button" class="botao">
                         <i class="fa-solid fa-circle-info"></i>
                         MAIS INFORMAÇÕES
-                    </button>   
-               </div>
+                    </button>
+                </div>
             </div>
         </div>
     </main>
 
+        <div class="carrosel-filmes">
+            <div class="owl-carousel owl-theme">
+                <div class="item" class="zoom">
+                    <img class="box-filme" src="img/mini1.jpg" alt="srcset">
+                </div>   
+                <div class="item" class="zoom">
+                    <img class="box-filme" src="img/mini2.jpg" alt="srcset">
+                </div>   
+                <div class="item" class="zoom">
+                    <img class="box-filme" src="img/mini3.jpg" alt="srcset">
+                </div>   
+                <div class="item" class="zoom">
+                    <img class="box-filme" src="img/mini4.jpg" alt="srcset">
+                </div>   
+                <div class="item" class="zoom">
+                    <img class="box-filme" src="img/mini5.jpg" alt="srcset">
+                </div>   
+                <div class="item" class="zoom">
+                    <img class="box-filme" src="img/mini6.jpg" alt="srcset">
+                </div>   
+                <div class="item" class="zoom">
+                    <img class="box-filme" src="img/mini7.jpg" alt="srcset">
+                </div>   
+                <div class="item" class="zoom">
+                    <img class="box-filme" src="img/mini8.jpg" alt="srcset">
+                </div>   
+                <div class="item" class="zoom">
+                    <img class="box-filme" src="img/mini9.jpg" alt="srcset">
+                </div>   
+                <div class="item" class="zoom">
+                    <img class="box-filme" src="img/mini10.jpg" alt="srcset">
+                </div>   
+            </div>
+        </div>
 
 
 
     <script src="https://kit.fontawesome.com/62e8751f6e.js" crossorigin="anonymous"></script>
-
+    <script src="JS/Owl/jquery.min.js"></script>
+    <script src="JS/Owl/owl.carousel.min.js"></script>
+    <script src="JS/Owl/main.js"></script>
 </body>
+
 </html>

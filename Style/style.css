@@ -1,6 +1,9 @@
 :root{
     --vermelho: #e50914;
     --preta: #141414;
+    --roxo-escuro: #240046;
+    --roxo-claro: #ecd5fd;
+    --branco: #fff;
 }
 
 * {
@@ -12,9 +15,10 @@
 /*Elementos base*/
 
 body {
-    background: var(--preta);
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
+    background: var(--roxo-escuro);
+    font-family: 'comic-sans-MS', Times, serif;
+    color: var(--branco);
+    font-size: 18px;
 }
 
 header .container {
@@ -23,16 +27,17 @@ header .container {
     align-items: center;
     justify-content: space-between;
 }
+
 header .logo{
     margin-left: 5px;
-    color: var(--vermelho);
+    color: var(--roxo-claro);
     font-family: 'arial black', Times;
     font-size: 40px;
 }
 
 header nav a{
     text-decoration: none;
-    color: #aaa;
+    color: rgb(255, 255, 255);
     margin-right: 10px;
 }
 
@@ -40,15 +45,14 @@ header nav a:hover{
     color: #fff;
 }
 
-
 /*filme principal*/
 
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0.50)), url("/img/olhos-famintos.jpg");
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0, 0, 1, 0.781)), url("/img/fundo2.jpg");
     
     height: 400px;
-    background-size: cover;
+    background-size: 100% 400px;
 
     display: flex;
     flex-direction: column;
@@ -59,6 +63,8 @@ header nav a:hover{
 .filme-principal .descricao{
     margin-top: 10px;
     margin-bottom: 40px;
+    font-size: 10;
+    text-align: left;
 }
 
 .filme-principal .titulo{
@@ -66,6 +72,8 @@ header nav a:hover{
     font-size: 40px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
 }
+
+
 
 .botao {
 
@@ -83,8 +91,6 @@ header nav a:hover{
 
 }
 
-    
-
 .botao:hover{
     background-color: white;
     color: black;
@@ -92,4 +98,41 @@ header nav a:hover{
 
 .botao{
     margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+    padding-top: 40px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 10%;
+}
+
+.item img{
+    max-width: 100%;
+    overflow:visible;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+    border-radius: 10%;
+}
+
+.item:hover img{
+    -moz-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+
+
+.carrosel-filmes{
+    margin-top: 5px;
 }
